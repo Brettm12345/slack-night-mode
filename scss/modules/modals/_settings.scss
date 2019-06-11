@@ -1,0 +1,55 @@
+.c-fullscreen_modal__body {
+  color: $base-font-color;
+}
+
+.c-fullscreen_modal__content {
+  background-color: $color-shade-mid;
+}
+
+.c-fullscreen_modal__header {
+  background: $color-shade-dark;
+}
+
+.c-sidebar_menu__list_item {
+  color: $base-font-color;
+}
+
+.c-sidebar_menu__list_item.is_active {
+  background: transparentize($color-shade-lightest, $amount: 0.8);
+}
+
+.c-color_picker__container {
+  border-color: $color-shade-darkest;
+  background: $color-shade-mid;
+}
+
+.c-color_picker__color_block {
+  border-color: $color-shade-darkest;
+}
+
+.c-multi_select_input {
+  background: transparent;
+  border-color: $color-shade-darkest;
+}
+
+.c-button--outline {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.23);
+  background-clip: padding-box;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  line-height: 1.75;
+  border-radius: 4px;
+  padding: 5px 16px !important;
+  letter-spacing: 0.02857em;
+}
+
+.p-prefs_modal__sidebar_container {
+  border: 1px solid $color-shade-darkest;
+  padding-right: 10px;
+}
