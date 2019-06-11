@@ -1507,8 +1507,8 @@
   ts-jumper ol:not(.keyboard_active) li:hover { background: #876484 !important; color: #f0d9ed !important; }
   ts-jumper ol li.highlighted .channel_not_member, ts-jumper ol li.highlighted .member_real_name + .member_username, ts-jumper ol li.highlighted .member_username + .member_real_name, ts-jumper ol li.highlighted i.presence_icon, ts-jumper ol li.highlighted ts-icon, ts-jumper ol:not(.keyboard_active) li:hover .channel_not_member, ts-jumper ol:not(.keyboard_active) li:hover .member_real_name + .member_username, ts-jumper ol:not(.keyboard_active) li:hover .member_username + .member_real_name, ts-jumper ol:not(.keyboard_active) li:hover i.presence_icon, ts-jumper ol:not(.keyboard_active) li:hover ts-icon { color: #f0d9ed; }
   .c-fullscreen_modal__body { color: #f0d9ed; }
-  .c-fullscreen_modal__content { background-color: #4a3b49; }
-  .c-fullscreen_modal__header { background: #4d394b; }
+  .c-fullscreen_modal__content { background-color: #4d394b; }
+  .c-fullscreen_modal__header { background: #372c36; }
   .c-sidebar_menu__list_item { color: #f0d9ed; }
   .c-sidebar_menu__list_item.is_active { background: rgba(135, 100, 132, 0.2); }
   .c-color_picker__container { border-color: #372c36; background: #4a3b49; }

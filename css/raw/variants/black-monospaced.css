@@ -3019,9 +3019,9 @@ ts-jumper ol li.highlighted .channel_not_member, ts-jumper ol li.highlighted .me
 
 .c-fullscreen_modal__body { color: #e6e6e6; }
 
-.c-fullscreen_modal__content { background-color: #424242; }
+.c-fullscreen_modal__content { background-color: #363636; }
 
-.c-fullscreen_modal__header { background: #363636; }
+.c-fullscreen_modal__header { background: #000; }
 
 .c-sidebar_menu__list_item { color: #e6e6e6; }
 
