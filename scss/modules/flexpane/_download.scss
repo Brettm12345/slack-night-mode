@@ -5,7 +5,6 @@
   &__container &__name_row {
     color: $base-font-color;
   }
-  
 
   &__actions {
     background: $color-base;
@@ -16,11 +15,20 @@
   &__link--show {
     color: $base-font-color;
   }
+
+  :hover {
+    border-color: $color-shade-darkest;
+  }
 }
 
 .p-downloads_list {
   &__shift_hint {
-    background: linear-gradient(180deg,hsla(0,0%,100%,0),$color-shade-dark 25%,$color-shade-dark);
+    background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0),
+      $color-shade-dark 25%,
+      $color-shade-dark
+    );
     color: $base-font-color;
   }
 }

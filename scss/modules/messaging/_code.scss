@@ -51,6 +51,9 @@ code {
   background: $color-shade-darkest;
   border: 1px solid $color-shade-dark;
   color: $base-font-color !important;
+  @if global-variable-exists(code-font-family) {
+    font-family: $code-font-family;
+  }
 
   pre {
     background: transparent !important;

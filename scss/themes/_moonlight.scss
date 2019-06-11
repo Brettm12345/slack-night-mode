@@ -1,0 +1,49 @@
+// Theme Colors
+$color-base: #212337;
+$color-highlight: #3c4361;
+
+$color-shade-darkest: #191a2a;
+$color-shade-dark: #1e2132;
+$color-shade-mid: #2a2e48;
+$color-shade-light: #3c4361;
+$color-shade-lightest: #4e5579;
+
+// Font Colors
+$base-font-color: #dcebff;
+
+$base-link-color: #74a0f1;
+$base-link-color-active: #74a0f1;
+
+// Code Colors
+$code-colors: (
+  keyword: #c3a2ff,
+  atom: #7e8eda,
+  number: #ff9e64,
+  def: #baacff,
+  variable: #cdd6f5,
+  variable-alt: #ffc777,
+  comment: #7e8eda,
+  string: #c3e88d,
+  string-alt: #89ddff,
+  meta: #ff757f,
+  qualifier: #f7a4ec,
+  builtin: #ff98a4,
+  bracket: #a0c4ff,
+  tag: #ff757f,
+  attribute: #c3a2ff,
+  header: #77e0c6,
+);
+
+// Emoji Hover Colors
+$emoji-hover-colors: (
+  0: #77e0c6,
+  1: #89ddff,
+  2: #ffc777,
+  3: #f7a4ec,
+  4: #c3a2ff,
+  5: #c3e88d,
+);
+
+// Font Families
+$code-font-family: 'Iosevka Term uwu Semibold', monospace;
+$base-font-family: 'Proxima Nova Cond Semibold', sans-serif;

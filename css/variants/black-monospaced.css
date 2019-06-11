@@ -1,4 +1,5 @@
-@-moz-document regexp("https://[^./]*\\.slack\\.com/(?!pricing)(?!security).*") { body { background: #222; color: #e6e6e6; }
+@-moz-document regexp("https://[^./]*\\.slack\\.com/(?!pricing)(?!security).*") { body, * { font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace; }
+  body { background: #222; color: #e6e6e6; }
   a { color: #949494; }
   a:link, a:visited { color: #949494; }
   a:hover, a:active, a:focus { color: #c7c7c7; }
@@ -598,8 +599,9 @@
   .c-message_attachment__delete:hover { color: #c7c7c7; }
   .c-message_attachment__pretext { color: #e6e6e6; }
   .c-message_attachment__part + .c-message_attachment__part::before { color: #545454; }
-  .c-message_attachment__author .c-message_attachment__autor--distinct { color: #949494; }
+  .c-message_attachment__author .c-message_attachment__author--distinct { color: #949494; }
   .c-message_attachment__author_link + .c-message_attachment__author_link { color: #949494; }
+  .c-message_attachment__author_name { color: #949494; }
   .c-message_attachment__title_link span { color: #e6e6e6; }
   .c-message_attachment__text_expander { color: #949494; }
   .c-message_attachment__footer { color: #949494; }
@@ -620,6 +622,7 @@
   .c-message__file_meta { color: #949494; }
   .c-message__image_container { background: rgba(0, 0, 0, 0.1); }
   .c-message__image_wrapper:after { border-color: transparent; }
+  .c-message_kit__labels__label { color: #949494; }
   .c-message_kit__file__meta { color: #e6e6e6; }
   .attachment_group.has_container { background: #222; border: 1px solid #363636; }
   .attachment_group.has_container .inline_attachment::after { background-color: #363636; }
@@ -728,7 +731,7 @@
   .file_list_item.snippet .snippet_preview { background: #000; }
   .snippet_preview, .snippet_body { background: #000; }
   .snippet_preview pre, .snippet_body pre { color: #e6e6e6 !important; }
-  .file_container .CodeMirror .CodeMirror-code > div::before, .file_container .CodeMirror .sssh-line::before, .file_container .sssh-code .CodeMirror-code > div::before, .file_container .sssh-code .sssh-line::before, .c-file_container .CodeMirror .CodeMirror-code > div::before, .c-file_container .CodeMirror .sssh-line::before, .c-file_container .sssh-code .CodeMirror-code > div::before, .c-file_container .sssh-code .sssh-line::before { background-color: #363636; border-right: 1px solid #363636; color: #949494; }
+  .file_container .CodeMirror .CodeMirror-code > div::before, .file_container .CodeMirror .sssh-line::before, .file_container .sssh-code .CodeMirror-code > div::before, .file_container .sssh-code .sssh-line::before, .c-pillow_file_container .CodeMirror .CodeMirror-code > div::before, .c-pillow_file_container .CodeMirror .sssh-line::before, .c-pillow_file_container .sssh-code .CodeMirror-code > div::before, .c-pillow_file_container .sssh-code .sssh-line::before, .c-file_container .CodeMirror .CodeMirror-code > div::before, .c-file_container .CodeMirror .sssh-line::before, .c-file_container .sssh-code .CodeMirror-code > div::before, .c-file_container .sssh-code .sssh-line::before { background-color: #363636; border-right: 1px solid #363636; color: #949494; }
   .c-snippet .c-file_container { background-color: #222; }
   .c-snippet .c-file_container.c-file_container--gradient::after { background: linear-gradient(180deg, rgba(255, 255, 255, 0), #222); border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
   .CodeMirror { background: #000; border: 1px solid #363636; color: #e6e6e6 !important; }
@@ -825,13 +828,17 @@
   #threads_view_banner.messages_banner:hover { background: #545454; }
   #threads_view_banner.messages_banner:hover .clear_unread_messages { background: #545454; }
   #threads_msgs.new_banner_is_showing::before { background: #222; }
-  .p-threads_view { background: #363636; }
-  .p-threads_view__divider_line, .p-threads_view__divider_label { background: #222222; border-color: #222222; color: #e6e6e6; }
-  .p-threads_view__default_background { background: #222222; }
+  .p-message_container_loading { background: #222; }
+  .p-message_container_loading__msg { color: #e6e6e6; }
+  .p-threads_view { background: #222; }
+  .p-threads_view__divider_line, .p-threads_view__divider_label { background: #363636; border-color: #363636; color: #e6e6e6; }
+  .p-threads_view__footer, .p-threads_view_root { border-color: #222222; }
+  .p-threads_view__default_background { background: #363636; }
   .p-threads_view_header__channel_name, .p-threads_view_header__participant_list { color: #e6e6e6; }
-  .p-threads_view .p_threads_view_load_newer_button, .p-threads_view .p_threads_view_load_older_button { background: #222222; }
+  .p-threads_view .p_threads_view_load_newer_button, .p-threads_view .p_threads_view_load_older_button { background: #363636; border-color: #222222; }
   .p-threads_view .p_threads_view_load_newer_button .c-link--button, .p-threads_view .p_threads_view_load_older_button .c-link--button { color: #949494; }
-  .p-threads_view_reply--new_reply { background: #222222; }
+  .p-threads_view_reply { border-color: #222222; }
+  .p-threads_view_reply--new_reply { background: #363636; }
   .p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field { background: #363636; }
   .p-threads_footer__input .p-message_input_file_button, .p-threads_footer__input--legacy .p-message_input_file_button { background: #363636; }
   ts-thread { background: #222; }
@@ -958,6 +965,7 @@
   .p-download_item__container .p-download_item__name_row { color: #e6e6e6; }
   .p-download_item__actions { background: #222; }
   .p-download_item__link--open, .p-download_item__link--retry, .p-download_item__link--show { color: #e6e6e6; }
+  .p-download_item :hover { border-color: #000; }
   .p-downloads_list__shift_hint { background: linear-gradient(180deg, rgba(255, 255, 255, 0), #363636 25%, #363636); color: #e6e6e6; }
   #file_list_toggle_users { color: #949494; }
   #file_list_toggle_users.active:hover, #file_list_toggle_users:hover { color: #c7c7c7; }
@@ -1044,7 +1052,8 @@
   .p-file_details__meta_container .c-file__action_button { color: #fff; }
   .c-pillow_file_container { background-color: #000; }
   .c-pillow_file_container .c-pillow_file__swap .c-pillow_file__slide { background-color: #000; }
-  .c-pillow_file__description, .c-pillow_file__title { color: #e6e6e6; }
+  .c-pillow_file__snippet__truncated, .c-pillow_file__description, .c-pillow_file__title { color: #e6e6e6; }
+  .c-pillow_file__content--collapsed::after { background: linear-gradient(0deg, #828282, rgba(255, 255, 255, 0) 40px); }
   .p-file_list, .p-file_list__filters { background: #363636; }
   .p-file_list__filters { border-color: #363636; }
   .p-file_list__file.c-pillow_file_container, .p-file_list__file.c-pillow_file_container--full_width { background: #363636; border-color: #363636; color: #e6e6e6; }
@@ -1207,6 +1216,9 @@
   .c-unified_member__display-name, .c-unified_member__secondary-name, .c-unified_member__title, .c-unified_member__other-names, .c-unified_member__other-names { color: #e6e6e6 !important; }
   #convo_tab #convo_tab_btns .close_flexpane:focus, #convo_tab #convo_tab_btns .close_flexpane:hover { color: #e6e6e6; }
   #convo_tab textarea.message_input { color: #e6e6e6; }
+  #convo_tab .message_input, #convo_tab textarea#msg_text { color: #e6e6e6; }
+  #convo_tab .p-threads_flexpane__separator_count { color: #949494; }
+  #convo_tab .p-threads_flexpane__separator_line { border-color: #949494; }
   #reply_container .inline_message_input_container .message_input div, #reply_container .inline_message_input_container textarea, .reply_input_container .inline_message_input_container .message_input div, .reply_input_container .inline_message_input_container textarea { border-color: #363636; color: #e6e6e6; }
   #reply_container .inline_message_input_container .message_input div:active, #reply_container .inline_message_input_container .message_input div:focus, #reply_container .inline_message_input_container textarea:active, #reply_container .inline_message_input_container textarea:focus, .reply_input_container .inline_message_input_container .message_input div:active, .reply_input_container .inline_message_input_container .message_input div:focus, .reply_input_container .inline_message_input_container textarea:active, .reply_input_container .inline_message_input_container textarea:focus { border-color: #000; }
   #reply_container .reply_broadcast_buttons_container .reply_broadcast_label_container, .reply_input_container .reply_broadcast_buttons_container .reply_broadcast_label_container { color: #e6e6e6; }
@@ -1215,7 +1227,6 @@
   #convo_container .convo_flexpane_divider { border-top-color: #363636; color: #949494; }
   #convo_container .convo_flexpane_divider .reply_count { background: #222; }
   #convo_container ts-conversation ts-message.selected .message_content .thread_channel_link { color: #949494; }
-  #convo_tab .message_input, #convo_tab textarea#msg_text { color: #e6e6e6; }
   ts-message.message:hover, ts-message.message:active, ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator), ts-message.message--focus:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator), ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator) { background-color: #222222; }
   ts-thread .collapse_inline_thread_container:hover, ts-thread .view_all_replies_container:hover { background-color: #222222; }
   #whats_new_tab p { color: #e6e6e6; }
@@ -1361,6 +1372,7 @@
   .c-dialog__body { background: #222222; }
   .c-dialog__body .p-share_dialog_message_input { background-color: #000; border-color: #363636; color: #e6e6e6; }
   .c-dialog__body .p-share_dialog_message_input.focus { border-color: #545454; box-shadow: unset; }
+  .c-dialog__body .p-share_dialog__section:last-child { background-color: #363636; border-color: #000; }
   .c-dialog__body .p-file_upload_dialog__preview, .c-dialog__body .p-file_upload_dialog__preview_image { background-color: #000; border-color: #363636; }
   .c-dialog__body input.c-input_text { border-color: #363636; }
   .c-dialog__body input.c-input_text .c-input_character_count { background-color: #363636; color: #e6e6e6; }
