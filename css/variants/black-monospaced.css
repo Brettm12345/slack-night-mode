@@ -1509,6 +1509,16 @@
   ts-jumper ol li.highlighted { background: #828282 !important; color: #e6e6e6 !important; }
   ts-jumper ol:not(.keyboard_active) li:hover { background: #828282 !important; color: #e6e6e6 !important; }
   ts-jumper ol li.highlighted .channel_not_member, ts-jumper ol li.highlighted .member_real_name + .member_username, ts-jumper ol li.highlighted .member_username + .member_real_name, ts-jumper ol li.highlighted i.presence_icon, ts-jumper ol li.highlighted ts-icon, ts-jumper ol:not(.keyboard_active) li:hover .channel_not_member, ts-jumper ol:not(.keyboard_active) li:hover .member_real_name + .member_username, ts-jumper ol:not(.keyboard_active) li:hover .member_username + .member_real_name, ts-jumper ol:not(.keyboard_active) li:hover i.presence_icon, ts-jumper ol:not(.keyboard_active) li:hover ts-icon { color: #e6e6e6; }
+  .c-fullscreen_modal__body { color: #e6e6e6; }
+  .c-fullscreen_modal__content { background-color: #424242; }
+  .c-fullscreen_modal__header { background: #363636; }
+  .c-sidebar_menu__list_item { color: #e6e6e6; }
+  .c-sidebar_menu__list_item.is_active { background: rgba(130, 130, 130, 0.2); }
+  .c-color_picker__container { border-color: #000; background: #424242; }
+  .c-color_picker__color_block { border-color: #000; }
+  .c-multi_select_input { background: transparent; border-color: #000; }
+  .c-button--outline { transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; background: transparent; border: 1px solid rgba(255, 255, 255, 0.23); background-clip: padding-box; color: #ffffff; font-weight: 700; border-radius: 4px; text-transform: uppercase; line-height: 1.75; border-radius: 4px; padding: 5px 16px !important; letter-spacing: 0.02857em; }
+  .p-prefs_modal__sidebar_container { border: 1px solid #000; padding-right: 10px; }
   .basic_share_dialog .share_dialog_divider { border-top-color: transparent; }
   .share_dialog_attachment_container { color: #e6e6e6; }
   #share_dialog .file_list_item { border-color: #000; }
